@@ -1,0 +1,160 @@
+{
+  "project": {
+    "name": "ecommerce",
+    "slug": "ecommerce",
+    "project_root": "/Users/roopesh/projects/ecommerce_groundup",
+    "docs_root": "/Users/roopesh/projects/ecommerce_groundup/docs",
+    "created_at": "2026-05-04T14:29:35.718188+00:00"
+  },
+  "modules": [
+    {
+      "name": "marketing",
+      "slug": "marketing",
+      "priority": "HIGH",
+      "description": "Website for marketing ",
+      "stages": {
+        "prep": {
+          "requirements": {
+            "status": "approved"
+          },
+          "user_flows": {
+            "status": "approved"
+          },
+          "design_system": {
+            "status": "approved"
+          },
+          "content": {
+            "status": "approved"
+          },
+          "validation": {
+            "status": "approved"
+          },
+          "module_md": {
+            "status": "approved"
+          }
+        },
+        "build": {
+          "foundation": {
+            "status": "not_started"
+          },
+          "tranches": [],
+          "tech_stack": {
+            "status": "approved"
+          }
+        },
+        "post": {
+          "backup": {
+            "status": "not_started"
+          },
+          "monitoring": {
+            "status": "not_started"
+          },
+          "security": {
+            "status": "not_started"
+          },
+          "cicd": {
+            "status": "not_started"
+          },
+          "support": {
+            "status": "not_started"
+          },
+          "audit": {
+            "status": "not_started"
+          },
+          "scalability": {
+            "status": "not_started"
+          }
+        }
+      },
+      "features": [
+        {
+          "slug": "checkout-payment",
+          "name": "Feature: Checkout and Payment",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "direct-messaging",
+          "name": "Feature: Direct Messaging Between Farmers and Customers",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "farmer-discovery",
+          "name": "Feature: Farmer Discovery",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "farmer-order-management",
+          "name": "Feature: Farmer Order Management",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "farmer-profile-management",
+          "name": "Feature: Farmer Profile Management",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "farmer-reputation-display",
+          "name": "Feature: Farmer Reputation Display",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "order-review-rating",
+          "name": "Feature: Order Review and Rating",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "order-tracking",
+          "name": "Feature: Order Tracking",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "produce-discovery",
+          "name": "Feature: Produce Discovery",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "produce-listing-management",
+          "name": "Feature: Produce Listing Management",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "shopping-cart",
+          "name": "Feature: Shopping Cart",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "user-login",
+          "name": "Feature: User Login",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "user-registration",
+          "name": "Feature: User Registration",
+          "description": "",
+          "priority": "MEDIUM"
+        }
+      ]
+    }
+  ],
+  "focus_module": "marketing",
+  "solution": {
+    "solution": {
+      "status": "approved"
+    },
+    "solution_personas": {
+      "status": "approved"
+    }
+  }
+}

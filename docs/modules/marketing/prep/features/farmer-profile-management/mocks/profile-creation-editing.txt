@@ -1,0 +1,43 @@
+╔══════════════════════════════════════════════════════╗
+║  🌱 Fresh Farm                    👤 Edit Profile   ║
+╚══════════════════════════════════════════════════════╝
+
+┌─ Create Farmer Profile ──────────────────────────────┐
+│                                                       │
+│ Location                                              │
+│ City: [Bangalore        ▾]                            │
+│ Village: [Enter village name                    ]    │
+│                                                       │
+│ Farming Practices (required)                          │
+│ ┌─────────────────────────────────────────────────┐ │
+│ │ We practice organic farming using sustainable  │ │
+│ │ methods without synthetic pesticides. Our farm  │ │
+│ │ focuses on crop rotation and soil health...     │ │
+│ └─────────────────────────────────────────────────┘ │
+│ 145/2000 characters                                  │
+│                                                       │
+│ Certifications (optional)                             │
+│ [Enter certifications                            ]   │
+│                                                       │
+│ Your Story (optional)                                 │
+│ ┌─────────────────────────────────────────────────┐ │
+│ │                                                  │ │
+│ └─────────────────────────────────────────────────┘ │
+│ 0/2000 characters                                    │
+│                                                       │
+│ Profile Photo (optional)                              │
+│ ┌─────────────────────────────────────────────────┐ │
+│ │   📷 Drag image here or [Browse]               │ │
+│ │      JPG, PNG • Max 5MB                         │ │
+│ └─────────────────────────────────────────────────┘ │
+│                                                       │
+│             [Save Profile]   [Cancel]                │
+│                                                       │
+└─────────────────────────────────────────────────────┘
+
+NOTES:
+- Location city dropdown shows: Bangalore, Cochin
+- Character counters update in real-time
+- Photo preview appears after upload
+- Form retains data if save fails
+- Success toast: "Profile saved and is now visible"

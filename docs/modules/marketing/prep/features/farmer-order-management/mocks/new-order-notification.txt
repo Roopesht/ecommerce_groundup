@@ -1,0 +1,39 @@
+╔══════════════════════════════════════════════════════╗
+║  🌱 Fresh Farm         Ramesh Kumar                  ║
+╚══════════════════════════════════════════════════════╝
+
+(Main dashboard view continues below...)
+
+
+         ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+         ┃  🔔 New Order!                   ┃
+         ┃                                  ┃
+         ┃  Order #ORD-000045               ┃
+         ┃  from Priya Sharma               ┃
+         ┃  for 3 items                     ┃
+         ┃                                  ┃
+         ┃  [Open Order]   [Dismiss]        ┃
+         ┃                                  ┃
+         ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+                                    ↓
+         (auto-dismiss after 5 seconds)
+
+
+(Or as inline toast at bottom-right:)
+
+         ┌─────────────────────────────────┐
+         │ ✓ New Order! #ORD-000045         │
+         │   [View] ✕                      │
+         └─────────────────────────────────┘
+
+
+NOTES:
+- Toast appears when farmer is on platform (real-time)
+- Click [View] to navigate to order detail
+- [Dismiss] or click ✕ to close
+- Toast auto-dismisses after 5 seconds
+- Multiple orders show sequential toasts
+- Also send email notification within 1 minute
+- If farmer not on platform, email + push notification
+- Notification tracks "seen" status to avoid duplicates
+- Badge on nav menu shows unread order count

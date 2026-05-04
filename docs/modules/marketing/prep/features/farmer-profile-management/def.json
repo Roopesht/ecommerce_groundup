@@ -1,0 +1,21 @@
+{
+  "feature": "farmer-profile-management",
+  "mocks": [
+    {
+      "name": "Farmer Dashboard",
+      "file": "mocks/farmer-dashboard.txt"
+    },
+    {
+      "name": "Profile Creation Editing",
+      "file": "mocks/profile-creation-editing.txt"
+    },
+    {
+      "name": "Public Farmer Profile",
+      "file": "mocks/public-farmer-profile.txt"
+    }
+  ],
+  "db_tables": [],
+  "api_endpoints": [],
+  "components": [],
+  "steps": []
+}

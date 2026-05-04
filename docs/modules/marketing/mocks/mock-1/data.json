@@ -1,0 +1,160 @@
+{
+  "appState": {
+    "currentScreen": "farmer-dashboard",
+    "userRole": "farmer",
+    "userId": "farmer-123",
+    "userName": "Ramesh Kumar"
+  },
+  "farmers": {
+    "farmer-123": {
+      "id": "farmer-123",
+      "name": "Ramesh Kumar Sharma",
+      "location": {
+        "city": "Bangalore",
+        "village": "Whitefield"
+      },
+      "farmingPractices": "We practice organic farming using sustainable methods without synthetic pesticides. Our farm focuses on crop rotation and soil health.",
+      "certifications": "Certified organic",
+      "story": "Started farming in 2010 after transitioning from conventional agriculture.",
+      "photoUrl": "👨",
+      "rating": 4.8,
+      "reviewCount": 23,
+      "activeListings": 5,
+      "totalOrders": 45
+    }
+  },
+  "customers": {
+    "customer-123": {
+      "id": "customer-123",
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "phone": "+91-9876543210",
+      "photoUrl": "👩"
+    },
+    "customer-124": {
+      "id": "customer-124",
+      "name": "Arjun Mehta",
+      "email": "arjun@example.com",
+      "phone": "+91-9876543211",
+      "photoUrl": "👨"
+    }
+  },
+  "produce": {
+    "produce-1": {
+      "id": "produce-1",
+      "name": "Tomatoes",
+      "farmerId": "farmer-123",
+      "price": 60,
+      "unit": "kg",
+      "quantity": 50,
+      "harvestDate": "2026-05-04",
+      "productionMethod": "No pesticides, hand-picked",
+      "leadTime": "2 days",
+      "availabilityStatus": "in-stock",
+      "emoji": "🍅"
+    },
+    "produce-2": {
+      "id": "produce-2",
+      "name": "Spinach",
+      "farmerId": "farmer-123",
+      "price": 40,
+      "unit": "kg",
+      "quantity": 30,
+      "harvestDate": "2026-05-03",
+      "productionMethod": "Organic, hand-picked",
+      "leadTime": "1 day",
+      "availabilityStatus": "in-stock",
+      "emoji": "🥬"
+    },
+    "produce-3": {
+      "id": "produce-3",
+      "name": "Carrots",
+      "farmerId": "farmer-123",
+      "price": 30,
+      "unit": "bunch",
+      "quantity": 100,
+      "harvestDate": "2026-05-02",
+      "productionMethod": "Seasonal, no chemicals",
+      "leadTime": "1 week",
+      "availabilityStatus": "in-stock",
+      "emoji": "🥕"
+    }
+  },
+  "orders": {
+    "ORD-000045": {
+      "id": "ORD-000045",
+      "orderNumber": "ORD-000045",
+      "farmerId": "farmer-123",
+      "customerId": "customer-123",
+      "status": "new",
+      "items": [
+        { "produceId": "produce-1", "quantity": 2, "unit": "kg", "unitPrice": 60 },
+        { "produceId": "produce-2", "quantity": 1, "unit": "kg", "unitPrice": 40 },
+        { "produceId": "produce-3", "quantity": 1, "unit": "bunch", "unitPrice": 30 }
+      ],
+      "totalAmount": 190,
+      "deliveryAddress": "123 Main St, Bangalore 560001",
+      "estimatedDelivery": "2026-05-06 to 2026-05-07",
+      "placedAt": "2026-05-04T10:30:00Z",
+      "statusUpdatedAt": "2026-05-04T10:30:00Z"
+    },
+    "ORD-000044": {
+      "id": "ORD-000044",
+      "orderNumber": "ORD-000044",
+      "farmerId": "farmer-123",
+      "customerId": "customer-124",
+      "status": "confirmed",
+      "items": [
+        { "produceId": "produce-1", "quantity": 1, "unit": "kg", "unitPrice": 60 },
+        { "produceId": "produce-3", "quantity": 2, "unit": "bunch", "unitPrice": 30 }
+      ],
+      "totalAmount": 120,
+      "deliveryAddress": "456 Oak Ave, Bangalore 560002",
+      "estimatedDelivery": "2026-05-05 to 2026-05-06",
+      "placedAt": "2026-05-03T14:20:00Z",
+      "statusUpdatedAt": "2026-05-03T14:20:00Z"
+    },
+    "ORD-000043": {
+      "id": "ORD-000043",
+      "orderNumber": "ORD-000043",
+      "farmerId": "farmer-123",
+      "customerId": "customer-123",
+      "status": "preparing",
+      "items": [
+        { "produceId": "produce-2", "quantity": 2, "unit": "kg", "unitPrice": 40 }
+      ],
+      "totalAmount": 80,
+      "deliveryAddress": "123 Main St, Bangalore 560001",
+      "estimatedDelivery": "2026-05-05",
+      "placedAt": "2026-05-02T09:15:00Z",
+      "statusUpdatedAt": "2026-05-02T11:00:00Z"
+    }
+  },
+  "reviews": [
+    {
+      "id": "review-1",
+      "farmerId": "farmer-123",
+      "customerId": "customer-123",
+      "customerName": "Priya S.",
+      "rating": 5,
+      "text": "Excellent quality! Very fresh and delivered on time. Will order again!",
+      "date": "2026-04-20T10:30:00Z"
+    },
+    {
+      "id": "review-2",
+      "farmerId": "farmer-123",
+      "customerId": "customer-124",
+      "customerName": "Arjun M.",
+      "rating": 4,
+      "text": "Great produce, good communication",
+      "date": "2026-03-15T14:20:00Z"
+    }
+  ],
+  "cart": {
+    "items": [],
+    "subtotal": 0,
+    "tax": 0,
+    "total": 0
+  },
+  "farmingPracticesText": "We practice organic farming using sustainable methods without synthetic pesticides. Our farm focuses on crop rotation and soil health. Started farming in 2010 after transitioning from conventional agriculture."
+}

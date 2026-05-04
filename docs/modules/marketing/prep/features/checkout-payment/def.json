@@ -1,0 +1,17 @@
+{
+  "feature": "checkout-payment",
+  "mocks": [
+    {
+      "name": "Checkout Form",
+      "file": "mocks/checkout-form.txt"
+    },
+    {
+      "name": "Payment Confirmation",
+      "file": "mocks/payment-confirmation.txt"
+    }
+  ],
+  "db_tables": [],
+  "api_endpoints": [],
+  "components": [],
+  "steps": []
+}

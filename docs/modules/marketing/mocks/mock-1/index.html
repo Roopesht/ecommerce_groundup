@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Farm - Marketplace Mockup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <div class="app-header">
+      <div class="app-logo">🌱 Fresh Farm</div>
+      <div class="app-nav">
+        <button onclick="switchRole()">Switch Role</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="app-content">
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar"></div>
+
+      <!-- Main Content -->
+      <div class="main-content" id="mainContent"></div>
+    </div>
+  </div>
+
+  <!-- Toast/Alert Container -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Modal Backdrop -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="shared.js"></script>
+  <script src="farmer-profile-management.js"></script>
+  <script src="farmer-order-management.js"></script>
+  <script src="checkout-payment.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+    // Initialize the app
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        // Load data
+        console.log('Fetching data.json...');
+        const response = await fetch('data.json');
+        console.log('Response status:', response.status);
+
+        if (!response.ok) throw new Error(`Failed to load data.json: ${response.status}`);
+
+        const data = await response.json();
+        console.log('Data loaded successfully:', data);
+        window.appData = data;
+
+        // Render header with user info
+        const header = document.querySelector('.app-header .app-nav');
+        if (header && window.appData && window.appData.appState) {
+          const user = window.appData.appState.userName;
+          const role = window.appData.appState.userRole;
+          header.innerHTML = `<span>${role === 'farmer' ? '👨‍🌾' : '👩'} ${user}</span>
+            <button onclick="switchRole()">Switch Role</button>
+            <button onclick="logout()">Logout</button>`;
+        }
+
+        console.log('Initializing app...');
+        // Initialize app
+        initializeApp();
+
+        console.log('Navigating to farmer-dashboard...');
+        // Render initial screen
+        goTo('farmer-dashboard');
+        console.log('App initialization complete');
+      } catch (error) {
+        console.error('App initialization failed:', error);
+        console.error('Stack:', error.stack);
+        document.getElementById('mainContent').innerHTML = `<h1>Error loading app</h1><p>${error.toString()}</p><pre>${error.stack}</pre>`;
+      }
+    });
+  </script>
+</body>
+</html>

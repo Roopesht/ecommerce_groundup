@@ -1,0 +1,39 @@
+╔══════════════════════════════════════════════════════╗
+║  🌱 Fresh Farm         Ramesh Kumar   3 new orders  ║
+╚══════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────┐
+│  Filter: [All ▾]  Sort: [Most Recent ▾]  [Search]   │
+│  Status: [New] [Confirmed] [Preparing]              │
+│          [Ready] [Completed]                         │
+└─────────────────────────────────────────────────────┘
+
+┌─ My Orders ──────────────────────────────────────────┐
+│                                                      │
+│ Order # │ Customer    │ Date    │ Status  │ Items    │
+│─────────┼─────────────┼─────────┼─────────┼──────────│
+│ORD-0045│ Priya S.    │ Today   │ 🔵 New  │ 3 items  │
+│        │ [View] [Msg]│ 10:30am │         │ ₹320     │
+│─────────┼─────────────┼─────────┼─────────┼──────────│
+│ORD-0044│ Arjun M.    │ Today   │ ✅Confirm│ 2 items │
+│        │ [View] [Msg]│ 9:15am  │         │ ₹180     │
+│─────────┼─────────────┼─────────┼─────────┼──────────│
+│ORD-0043│ Deepa N.    │ Today   │ 🔄Prep  │ 5 items  │
+│        │ [View] [Msg]│ 8:45am  │         │ ₹520     │
+│─────────┼─────────────┼─────────┼─────────┼──────────│
+│ORD-0042│ Vikram R.   │ Yestr.  │ 📦Ready │ 2 items  │
+│        │ [View] [Msg]│ 4:20pm  │         │ ₹240     │
+│─────────┼─────────────┼─────────┼─────────┼──────────│
+│ORD-0041│ Neha G.     │ Yestr.  │ ✔️Done  │ 4 items  │
+│        │ [View] [Msg]│ 2:10pm  │         │ ₹410     │
+│                                                      │
+│ Page 1 of 3 | [Prev] [1] [2] [3] [Next]             │
+└──────────────────────────────────────────────────────┘
+
+NOTES:
+- Status filter shows color-coded badges
+- Sort options: Most Recent (default), Oldest First
+- Click order number to view detailed view
+- Unread messages show blue dot
+- Badge at top shows count of new orders
+- Pagination loads next 20 orders

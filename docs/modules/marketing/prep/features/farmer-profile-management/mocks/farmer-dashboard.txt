@@ -1,0 +1,51 @@
+╔══════════════════════════════════════════════════════╗
+║  🌱 Fresh Farm         Ramesh Kumar      👤 Logout  ║
+╚══════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────┐
+│  Home    My Produce    My Orders    Messages         │
+└─────────────────────────────────────────────────────┘
+
+┌─ My Profile ─────────────────────────────────────────┐
+│  ┌─────────────┐                                      │
+│  │   🧑 Photo  │  Ramesh Kumar Sharma               │
+│  └─────────────┘  📍 Bangalore, Whitefield           │
+│                   Rating: ⭐ 4.8                     │
+│                   [Edit Profile] [View Public]       │
+└──────────────────────────────────────────────────────┘
+
+┌─ Quick Stats ────────────────────────────────────────┐
+│                                                      │
+│  Total Reviews: 23    |  Avg Rating: 4.8            │
+│  Active Listings: 5   |  Total Orders: 45            │
+│  New Orders: 3        |  This Week: 12               │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+
+┌─ Recent Activity ────────────────────────────────────┐
+│                                                      │
+│ ✅ Order ORD-000045 confirmed by customer          │
+│    15 minutes ago                                    │
+│                                                      │
+│ ⭐ New review: Priya S. gave 5 stars                │
+│    "Excellent quality!" - 2 hours ago               │
+│                                                      │
+│ 📦 Order ORD-000044 ready for delivery              │
+│    1 day ago                                         │
+│                                                      │
+│ 📝 New message from Arjun M.                        │
+│    "Do you have tomatoes this week?" - 3 hours ago  │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+
+┌─ Quick Actions ──────────────────────────────────────┐
+│  [+ List New Produce]  [View My Orders]              │
+│  [Check Messages]      [Manage Inventory]            │
+└──────────────────────────────────────────────────────┘
+
+NOTES:
+- Sidebar navigation toggles active state
+- Quick stats update in real-time
+- Recent activity shows chronological feed
+- Click on stats to drill down to detail view
+- Badge on Messages icon shows unread count

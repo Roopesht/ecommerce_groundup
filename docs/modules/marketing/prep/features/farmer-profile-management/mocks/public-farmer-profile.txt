@@ -1,0 +1,57 @@
+╔══════════════════════════════════════════════════════╗
+║  🌱 Fresh Farm                    ← Back      Search ║
+╚══════════════════════════════════════════════════════╝
+
+         ┌─────────────────┐
+         │                 │
+         │    🧑 Photo     │
+         │                 │
+         └─────────────────┘
+
+         Ramesh Kumar Sharma
+         📍 Bangalore, Whitefield
+         ⭐ 4.8  (23 reviews)
+
+         [Message Farmer]  [View All Listings]
+
+┌─ About This Farmer ──────────────────────────────────┐
+│ We practice organic farming using sustainable       │
+│ methods without synthetic pesticides. Our farm      │
+│ focuses on crop rotation and soil health...         │
+│                                                      │
+│ Started farming in 2010 after transitioning from    │
+│ conventional agriculture. Passion for sustainable   │
+│ practices and direct customer relationships.        │
+│                                                      │
+│ Certified organic • Biodynamic methods              │
+└──────────────────────────────────────────────────────┘
+
+┌─ Current Listings ───────────────────────────────────┐
+│  Tomatoes          Spinach           Carrots        │
+│  🍅 ⭐4.7         🥬 ⭐4.9          🥕 ⭐4.5       │
+│  ₹60/kg           ₹40/kg            ₹30/kg         │
+│  2 days lead time Ready tomorrow    1 week         │
+│                                                      │
+│  Brinjal           Capsicum                          │
+│  🍆 ⭐4.8         🫑 ⭐5.0                         │
+│  ₹45/kg           ₹80/kg                            │
+│  2-3 days         Ready now                          │
+└──────────────────────────────────────────────────────┘
+
+┌─ Recent Reviews ─────────────────────────────────────┐
+│ Priya S.  ⭐⭐⭐⭐⭐                                  │
+│ "Excellent quality! Very fresh and delivered on    │
+│  time. Will order again!"                           │
+│ 2 weeks ago                                          │
+│                                                      │
+│ Arjun M.  ⭐⭐⭐⭐                                   │
+│ "Great produce, good communication"                 │
+│ 1 month ago                                          │
+└──────────────────────────────────────────────────────┘
+
+NOTES:
+- Profile photo is circular (200x200px)
+- Listings are clickable and show detail view
+- Reviews section is scrollable
+- Message button opens direct messaging modal
+- Rating aggregates all customer reviews

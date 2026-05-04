@@ -1,0 +1,21 @@
+{
+  "feature": "farmer-order-management",
+  "mocks": [
+    {
+      "name": "New Order Notification",
+      "file": "mocks/new-order-notification.txt"
+    },
+    {
+      "name": "Order Detail View",
+      "file": "mocks/order-detail-view.txt"
+    },
+    {
+      "name": "Orders Dashboard",
+      "file": "mocks/orders-dashboard.txt"
+    }
+  ],
+  "db_tables": [],
+  "api_endpoints": [],
+  "components": [],
+  "steps": []
+}

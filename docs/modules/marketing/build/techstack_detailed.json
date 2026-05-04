@@ -1,0 +1,134 @@
+{
+  "module": "marketing",
+  "frontend": {
+    "framework": "React",
+    "framework_version": "18.x (LTS)",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS",
+    "styling_version": "3.x",
+    "components": "shadcn/ui",
+    "state_management": "React Context + useReducer (no Redux unless needed at scale)",
+    "forms": "React Hook Form",
+    "forms_version": "7.x",
+    "http_client": "Axios",
+    "http_client_version": "1.x",
+    "routing": "React Router",
+    "routing_version": "6.x",
+    "build_tool": "Vite",
+    "build_tool_version": "5.x",
+    "testing": "Vitest + React Testing Library",
+    "rationale": "React mandated by product. TypeScript for maintainability at scale. Tailwind + shadcn for rapid UI development. Context for simple state (no cross-module complexity yet). React Hook Form for form-heavy module (farmer profiles, listings, messaging). Axios familiar and reliable. React Router v6 standard. Vite for fast dev experience."
+  },
+  "backend": {
+    "framework": "Spring Boot",
+    "framework_version": "3.2.x (LTS)",
+    "language": "Java",
+    "jdk_version": "21 (LTS)",
+    "orm": "Spring Data JPA + Hibernate",
+    "authentication": "JWT (stateless) + Spring Security",
+    "request_validation": "Bean Validation (JSR-380) + Hibernate Validator",
+    "api_documentation": "Springdoc OpenAPI (Swagger 3.0)",
+    "dependency_injection": "Spring Dependency Injection (built-in)",
+    "testing": "JUnit 5 + Mockito + Spring Boot Test",
+    "rationale": "Spring Boot and Java mandated. JWT for stateless REST API. Spring Security for OAuth2-ready auth layer. Spring Data JPA + Hibernate standard for SQL mapping. Bean Validation for request validation. Springdoc for API documentation (required for integration partners)."
+  },
+  "database": {
+    "primary_store": "MySQL",
+    "mysql_version": "8.0 (LTS)",
+    "migration_tool": "Flyway",
+    "migration_version": "9.x",
+    "cache_layer": null,
+    "cache_rationale": "Not needed for MVP (1,000 users, no real-time streaming). Can add Redis later if search/browse queries become bottleneck.",
+    "rationale": "MySQL mandated by product. Flyway for simple, versionable migrations. No caching layer required for initial scale—MySQL with proper indexing on search fields (farmer name, produce type, location) is sufficient."
+  },
+  "hosting": {
+    "frontend": {
+      "platform": "AWS S3 + CloudFront",
+      "rationale": "Static React build hosted in S3, distributed via CloudFront CDN. Simple, cost-effective, mandated AWS."
+    },
+    "backend": {
+      "platform": "AWS ECS Fargate or EC2 + ALB",
+      "container_image": "Docker (Spring Boot JAR in container)",
+      "rationale": "Docker-based deployment (product mandated). Fargate for serverless simplicity, or EC2 with load balancer for predictable cost. Auto-scaling for traffic spikes during launch."
+    },
+    "database": {
+      "platform": "AWS RDS MySQL",
+      "instance_class": "db.t3.small (start, scale as needed)",
+      "rationale": "Managed MySQL on AWS. Multi-AZ for availability. Automated backups. Mandated AWS."
+    }
+  },
+  "integrations": {
+    "email_notifications": {
+      "service": "AWS SES",
+      "use_cases": "Order confirmations, payment receipts, farmer inquiries, review notifications",
+      "rationale": "Integrated with AWS. Simple setup. Sufficient for transactional emails."
+    },
+    "payment_processing": {
+      "pattern": "Processor-agnostic adapter",
+      "abstraction": "PaymentProcessor interface (backend). Route requests to processor via abstraction. Webhook handlers for payment status updates.",
+      "supported_processors": "Razorpay, Stripe, PayPal (via adapter pattern)",
+      "rationale": "Payment processor not yet chosen (open question in requirements). Define adapter interface to support any processor. Implementations can be swapped without changing core order flow."
+    },
+    "third_party_logistics": {
+      "pattern": "Logistics provider adapter",
+      "abstraction": "LogisticsProvider interface (backend). Methods: createShipment(), trackShipment(), getDeliveryEstimate(). Provider-specific implementations.",
+      "integration_points": "Order confirmation → create shipment; Order tracking page → fetch status from provider",
+      "rationale": "Third-party provider not yet chosen (open question). Define adapter to support any logistics partner. Platform coordinates timing but does not handle delivery itself."
+    },
+    "file_storage": {
+      "service": "AWS S3",
+      "use_cases": "Farmer profile photos, produce listing photos",
+      "rationale": "Integrated with AWS. Pre-signed URLs for secure uploads/downloads. Simple integration with backend."
+    },
+    "analytics": {
+      "service": "Optional: AWS CloudWatch + custom dashboards",
+      "metrics": "Order volume, user acquisition rate, farmer engagement, AOV tracking",
+      "rationale": "Not mandated by requirements but useful for tracking success metrics. Can be added post-launch."
+    }
+  },
+  "data_model_overview": {
+    "core_entities": [
+      "User (Farmer, Customer)",
+      "FarmerProfile (location, certifications, story, rating)",
+      "Produce (type, quantity, harvest_date, lead_time, price, photos, availability)",
+      "Order (customer, produce items, total, address, payment_status, delivery_status)",
+      "Message (farmer, customer, conversation history)",
+      "Review (farmer, customer, rating, text)"
+    ],
+    "data_characteristics": "Moderate volume (1,000 users → ~5,000-10,000 orders in first 90 days). Relational (orders → customers, farmers, produce). File references (S3 URLs). Simple temporal (order dates, delivery windows). No real-time streaming or complex aggregations needed for MVP."
+  },
+  "security_considerations": {
+    "owasp_top_10": "OWASP Top 10 compliance required (product mandate)",
+    "key_controls": [
+      "JWT tokens + Spring Security (A07:2021 - Identification and Authentication Failures)",
+      "Input validation via Bean Validation (A03:2021 - Injection)",
+      "SQL parameterized queries via Hibernate (A03:2021 - Injection)",
+      "HTTPS/TLS for all communication (A02:2021 - Cryptographic Failures)",
+      "CORS configured per origin (A01:2021 - Broken Access Control)",
+      "Secrets stored in AWS Secrets Manager (A06:2021 - Vulnerable and Outdated Components)",
+      "Rate limiting on payment/login endpoints (A05:2021 - Broken Access Control)"
+    ]
+  },
+  "deployment_pipeline": {
+    "frontend": "Git → GitHub Actions → npm build → S3 upload → CloudFront invalidation",
+    "backend": "Git → GitHub Actions → Maven build → Docker build → ECR push → ECS/EC2 deploy → smoke tests",
+    "database": "Git → Flyway migrations → RDS schema update (on deployment)",
+    "rationale": "Simple CI/CD. GitHub Actions integrated with AWS. Docker for consistent environments."
+  },
+  "monitoring_and_logging": {
+    "backend_logs": "CloudWatch Logs (Spring Boot logs → CloudWatch via Docker)",
+    "frontend_errors": "Optional: Sentry or CloudWatch for JS errors",
+    "database": "RDS CloudWatch metrics (connections, CPU, disk I/O)",
+    "success_metric_tracking": "Custom CloudWatch dashboards for: user acquisition, weekly active rate, AOV"
+  },
+  "notes": {
+    "open_decisions": [
+      "Payment processor: Razorpay (India-first) or Stripe (global). Architect to abstract via adapter.",
+      "Logistics partner(s): Confirm integration API and SLA before implementation.",
+      "KYC/customer verification: Policy decision needed. Implement via validation layer.",
+      "Food safety compliance: Legal review needed. May require disclaimers or regulatory integrations."
+    ],
+    "simplicity_priority": "This stack is intentionally minimal—no message queue (Kafka), no microservices, no complex caching. Scale vertically first (RDS, ECS compute), add horizontal complexity only if metrics demand it.",
+    "mvp_focus": "All choices target rapid launch and clear paths to the three success metrics: 1,000 users, 50% weekly active, ₹500+ AOV."
+  }
+}

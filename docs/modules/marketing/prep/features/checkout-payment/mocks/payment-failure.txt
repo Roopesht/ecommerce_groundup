@@ -1,0 +1,55 @@
+╔══════════════════════════════════════════════════════╗
+║  🌱 Fresh Farm                                       ║
+╚══════════════════════════════════════════════════════╝
+
+                  ✗ Payment Failed
+
+         Your payment could not be processed
+
+
+┌─ ERROR DETAILS ───────────────────────────────────────┐
+│                                                       │
+│ Reason: Card Declined                                 │
+│                                                       │
+│ Please check with your card issuer or try a          │
+│ different payment method.                             │
+│                                                       │
+│ Error Code: RZP-402 (Card Declined)                  │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌─ WHAT YOU CAN DO ────────────────────────────────────┐
+│                                                       │
+│ ▪ Try a different payment method                     │
+│                                                       │
+│ ▪ Check your card details are correct                │
+│                                                       │
+│ ▪ Contact your bank for more information             │
+│                                                       │
+│ ▪ Use a different card if available                  │
+│                                                       │
+│ 💡 Your cart items are still saved!                  │
+│    You can retry whenever you're ready.              │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌─ ACTIONS ────────────────────────────────────────────┐
+│                                                       │
+│        [Retry Payment]   [Edit Cart]                 │
+│                                                       │
+│              [Contact Support]                        │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+
+NOTES:
+- X icon (✗) with red styling for failure
+- Error reason from Razorpay (Card Declined, etc.)
+- Cart persists after failure - no data loss
+- [Retry Payment] returns to checkout form with data
+- [Edit Cart] allows quantity/farmer changes
+- [Contact Support] links to help/support page
+- Order was NOT created - safe to retry
+- Generic fallback message if error code unknown
+- Payment processor name not shown to user
+- Toast notification shows error briefly

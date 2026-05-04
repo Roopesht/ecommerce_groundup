@@ -1,0 +1,56 @@
+╔══════════════════════════════════════════════════════╗
+║  ← Back                Order #ORD-000045             ║
+║                        Placed: Today 10:30 AM        ║
+╚══════════════════════════════════════════════════════╝
+
+┌─ Customer ───────────────────────────────────────────┐
+│  Name: Priya Sharma                                  │
+│  Phone: [+91-9876543210]  Email: [priya@...com]     │
+│  [Message Customer]                                  │
+└──────────────────────────────────────────────────────┘
+
+┌─ Delivery Details ───────────────────────────────────┐
+│  123 Main St, Bangalore 560001                       │
+│  Est. Delivery: 2026-05-06 to 2026-05-07            │
+└──────────────────────────────────────────────────────┘
+
+┌─ Order Timeline ─────────────────────────────────────┐
+│  ✓ Order Placed   ▼ 2026-05-04 10:30 AM             │
+│  ○ Confirmed       ○                                 │
+│  ○ Preparing       ○                                 │
+│  ○ Ready Delivery  ○                                 │
+└──────────────────────────────────────────────────────┘
+
+┌─ Items ──────────────────────────────────────────────┐
+│                                                      │
+│  🍅 Tomatoes                                         │
+│     Qty: 2 kg × ₹60/kg = ₹120                       │
+│                                                      │
+│  🥬 Spinach (Organic)                                │
+│     Qty: 1 kg × ₹40/kg = ₹40                        │
+│                                                      │
+│  🥕 Carrots                                          │
+│     Qty: 1 bunch × ₹30 = ₹30                        │
+│                                                      │
+│  ────────────────────────────────                   │
+│  Total: ₹190                                         │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+
+┌─ Next Action ────────────────────────────────────────┐
+│  Current Status: 🔵 New (Just received)              │
+│                                                      │
+│  [Confirm Receipt & Start Preparing]                │
+│                                                      │
+│  Status will be: confirmed ➜ preparing ➜ ready     │
+│  Customer will be notified of each update           │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+
+NOTES:
+- Phone/email are clickable (tel://, mailto://)
+- Timeline shows visual progression
+- Status buttons appear based on current state
+- After confirm, next button is "Mark as Preparing"
+- Each status change notifies customer
+- Contact customer via direct message if needed

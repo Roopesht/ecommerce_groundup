@@ -1,0 +1,57 @@
+╔══════════════════════════════════════════════════════╗
+║  🌱 Fresh Farm                                       ║
+╚══════════════════════════════════════════════════════╝
+
+               ✓ Order Placed Successfully!
+
+         Thank you for your order, Priya!
+
+        Order confirmation email has been sent to
+              priya@example.com
+
+
+┌─ ORDER SUMMARY ───────────────────────────────────────┐
+│                                                       │
+│ Order Number(s): ORD-000045                           │
+│ Total Amount Paid: ₹199.50                            │
+│ Order Date: 2026-05-04 at 10:30 AM                   │
+│                                                       │
+│ Items ordered from:                                   │
+│ ✓ Ramesh Kumar (Farmer)                              │
+│   3 items • Est. Delivery: 2026-05-06 to 07         │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌─ WHAT'S NEXT? ────────────────────────────────────────┐
+│                                                       │
+│ 🌱 Farmers will confirm receipt within 2 hours       │
+│                                                       │
+│ 📧 Check your email for order details                │
+│                                                       │
+│ 📦 Track order status in 'My Orders'                 │
+│                                                       │
+│ 💬 Questions? Message farmers directly               │
+│    Ramesh Kumar: [Message]                            │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌─ ACTIONS ────────────────────────────────────────────┐
+│                                                       │
+│          [View My Orders]   [Continue Shopping]      │
+│                                                       │
+│                 [Download Invoice]                    │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+
+NOTES:
+- Large checkmark icon (✓) for visual success
+- Order numbers separated if multiple farmers
+- Delivery address shown above (optional)
+- "Message Farmers" quick links below
+- Email sent within 5 minutes
+- Invoice download available if Phase 1 supports
+- "View My Orders" navigates to order tracking
+- "Continue Shopping" navigates to marketplace home
+- Order number formatted: ORD-XXXXXX
+- Confirmation persists even after page refresh

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mock-1",
+    "name": "Mock-1",
+    "description": "Complete set of mocks so far",
+    "target_screen": "Checkout, Order Management, profile management",
+    "features": [
+      "checkout-payment",
+      "farmer-order-management",
+      "farmer-profile-management"
+    ],
+    "fidelity": "mid"
+  }
+]
